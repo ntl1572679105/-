@@ -1,0 +1,255 @@
+#body{
+    width: 100vw;
+    // height: 100vh;
+    // background: #036bd9;
+    background-color: var(--color-main);
+
+    >.bottom-bg{
+
+        >.g-img1{
+        
+            >.container{
+        
+                >.swiper-container{
+                    position: relative;
+        
+                    >.swiper-main{
+        
+                        >.swiper-one{
+                            // position: absolute;
+                            --swiper-theme-color: #ff6600;/* 设置Swiper风格 */
+                            --swiper-navigation-color:green;/* 按钮颜色 */
+                            --swiper-navigation-size: 100px;/* 按钮大小 */
+        
+                            >.swiper-wrapper{
+        
+                                >.swiper-slide{
+                                    position: relative;
+                                    width: 100vw;
+                                    height: 100vh;
+        
+                                    >.banner-box{
+                                        // width: 100vw;
+                                        // height: 100vh;
+                                        >img{
+                                            object-fit: cover;
+                                            width: 100vw;
+                                            height: 100vh;
+                                        }
+                                    }
+                                    >.banner-word{
+                                        position: absolute;
+                                        // z-index: 2;
+                                        transform: none;
+                                        max-width: 100%;
+                                        width: 500px;
+                                        // border: 1px solid saddlebrown;
+                                        top: 40%;
+                                        left: 30%;
+                                        transform: translate(-50%,-50%);
+                                        // border: 1px solid black;
+                                        >p{
+                                            display: block;
+                                            width: 650px;
+                                            height: 120px;
+                                            color: #ffffff;
+                                            text-shadow: 3px 10px 5px #656b79;
+                                            font-size: 55px;
+                                            font-weight: bolder;
+                                        }
+                                        >a{
+                                            display: inline-block;
+                                            text-decoration: none;
+                                            text-align: center;
+                                            width: auto;
+                                            width: 260px;
+                                            height: 55px;
+                                            line-height: 55px;
+                                            background-color: #036bd9;
+                                            color: #fff;
+                                            font-size: 23px;
+                                            border-radius: 3.125rem;
+        
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+        
+                    >.swiper-bottom{
+                        position: absolute;
+                        bottom: -60px;
+                        width: 100vw;
+                        height: 200px;
+                        // border: 1px solid salmon;
+                        // background: linear-gradient(0deg, rgb(27, 27, 223), white);;
+                        >.swiper-two{
+                            width: 1000px;
+                            margin: auto;
+                            height: 180px;
+                            overflow: hidden;
+                            >.swiper-wrapper{
+        
+        
+                                >.swiper-slide{
+                                        // width: 144px;
+                                        // height: 144px;
+                                    >#img{
+                                        width: 144px;
+                                        height: 144px;
+                                        >img{
+                                            width: 144px;
+                                            height: 144px;
+                                        }
+                                    }
+                                    >#word{
+                                        background: transparent;
+                                        >h4{
+                                            width: 144px;
+                                            text-align: center;
+                                            color: rgb(12, 12, 12);
+                                            display: inline-block;
+                                            font-size: 14px;
+                                            opacity: .5;
+                                        }
+                                    }
+        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .g-img2 {
+            // background-image: url(../../assert/悬浮图/bg.jpg);
+            background-color: var(--color-main);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            
+            height: 30vh;
+            /* background: rgba(0, 0, 0, .7); */
+            color: #fff;
+            line-height: 30vh;
+            text-align: center;
+            font-size: 7vh;
+            font-weight: bold;
+        }
+        .g-img3 {
+            background-image: url(../../assert/悬浮图/bg.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            
+            // box-sizing: border-box;
+            display: inline-block;
+            height: 400px;
+            width: 100vw;
+            color: #fff;
+                >.bg{
+                    width: 1000px;
+                    margin: auto;
+                    >div{
+                        width: 550px;
+                        height: 180px;
+                        // border: 1px solid saddlebrown;
+                        // margin:100px;
+                        margin-top: 80px;
+                        
+                        >span{
+                            display: block;
+                            font-weight: bold;
+                        }
+                        >h1{
+                            cursor: pointer;
+                            display: block;
+                            margin: 10px 0 5px 0;
+                        }
+                        >p{
+                            display: block;
+                            font-weight: 540;
+                            margin: 5px 0 ;
+                        }
+                        >a{
+                            display: block;
+                            cursor: pointer;
+                            color: white;
+                            font-weight: 600;
+        
+                        }
+        
+                    }
+
+                }
+
+        }
+    }
+
+    >.main-content{
+        width: 1000px;
+        margin: auto;
+        overflow: hidden;
+
+        >.container{
+            // border: 1px solid saddlebrown;
+            // background-color: var(--color-main);
+            color: white;
+
+            >.menu{
+                width: 1000px;
+                height:70px;
+                line-height: 70px;
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            
+            >.swiper-three{
+                width: 1000px;
+                height: 240px;
+
+                >.swiper-wrapper{
+
+                    >.swiper-slide{
+                        width: 280px;
+                        height: 250px;
+                        margin-right: 15px;
+                        border-radius: 30px;
+                        >a{
+
+                            >.img{
+                                width: 285px;
+                                height: 170px;
+                                border-top-left-radius: 30px;
+                                border-top-right-radius: 30px;
+                                overflow: hidden;
+                                img{
+                                    margin-top: -20px;
+                                    width: 100%;
+                                    height: 200px;
+                                    object-fit:contain;
+                                }
+                            }
+                            >.word{
+                                line-height: 40px;
+                                height: 80px;
+                                border-bottom-left-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                                padding-left: 20px;
+                                background-color: white;
+                                margin-top: -10px;
+                                >p{
+                                    font-family: "AvenirNextLTPro-Regular","MXiangHeHeiSCStd-Book";
+                                    font-size: x-small;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

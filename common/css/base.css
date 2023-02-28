@@ -1,0 +1,29 @@
+/* 本项目个性化设定 */
+
+/* 全局设定 */
+:root {
+    /* 主题色，内容固定宽高 */
+    --width: 1000px;
+    --color-top: #036BD9;
+    --color-main: #162B75;
+}
+
+#body {
+    min-width: var(--width);
+}
+
+input {
+    /* 外轮廓: 激活时带有的 */
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+i {
+    display: inline-block;
+}
+@keyframes changeColor{
+    0%{background: #1d84b5;}
+    50%{background: #00c4cd;}
+    100%{background: #1d84b5;}
+}

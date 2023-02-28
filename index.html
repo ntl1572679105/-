@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京环球度假区</title>
+
+    <!-- 通用样式 -->
+    <link rel="stylesheet" href="./common/css/base.css">
+    <link rel="stylesheet" href="./common/css/reset.css">
+    <!-- 阿里巴巴icon样式 -->
+    <link rel="stylesheet" href="./common/font_3888605_qcyipi66hed/iconfont.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <!-- 特定样式 -->
+    <link rel="stylesheet" href="./components/footer/footer.css">
+    <link rel="stylesheet" href="./components/header/header.css">
+
+    <link rel="shortcut icon" href="./assert/myico2.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="body"> </div>
+    <div id="footer"></div>
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        // 在 html 加载完毕后, 再加载关联的 JS 
+        $('#header').load('./components/header/header.html', function () {
+            var s = document.createElement('script')
+            s.src = './components/header/header.js'
+            $('body').append(s)
+        })
+        $('#footer').load('./components/footer/footer.html', function () {
+            var q = document.createElement('script')
+            q.src = './components/footer/footer.js'
+            $('body').append(q)
+        })
+
+
+        // 路由系统: 读取路径中的参数p 的值, 然后拼接出对应的页面路径
+        const params = new URLSearchParams(location.search)
+        const p = params.get('p') || 'home'//逻辑短路
+
+        console.log(`要加载的页面地址: ./pages/${p}/${p}.html`)
+
+        // load: 属于异步操作, 通过回调函数来通知 加载完毕的时机
+        $('#body').load(`./pages/${p}/${p}.html`, function () {
+            // 一个页面由3个文件组成: html css 和 js -- 动态在 head 标签中, 添加子元素 link 标签
+            $('head').append(`<link rel="stylesheet" href="./pages/${p}/${p}.css">`)
+
+            // 动态加载 页面的js 文件
+            // 注意: 不能通过字符串添加 脚本的引入, 会把 < /script> 错认为是结尾标签 通过JS代码, 构造一个脚本元素  createElement : 创建元素
+            const sc = document.createElement('script')
+            console.log('sc:', sc)
+            sc.src = `./pages/${p}/${p}.js`
+            $('body').append(sc)
+                
+        })
+
+
+
+    </script>
+</body>
+
+</html>

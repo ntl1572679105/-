@@ -1,0 +1,29 @@
+::before,
+::after{
+    /* 怪异盒子 */
+    box-sizing: border-box;
+}
+img{
+    /* 幽灵空白节点 */
+    display: block;
+    /* 原有比例 */
+    object-fit: cover;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+body,p,ul,li,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+html{
+    font-size: 18px;
+    color: #333;
+}
+a{
+    /* 文本装饰: 例如 下划线 */
+    text-decoration: none;
+    color: #333;
+}

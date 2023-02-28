@@ -1,0 +1,559 @@
+#header{
+    // background-color: #eee;
+    background-color: var(--color-top);
+    // background: transparent;
+    width: 100vw;
+    // position: fixed;
+    // top: 0;
+    // z-index: 10;
+    // left: 0;
+
+    >.background{
+        // background-color: seagreen;
+        // margin: auto;
+        // width: 1500px;
+        >.container{
+            width: 1000px;
+            margin: auto;
+            display: flex;
+            // background-color: var(--color-top);
+            // position: relative;
+
+            >.logo{
+                height: 80px;
+                width: 72px;
+
+                &:hover  .img-logo{
+                    scale: 0.7;
+                }
+                &:hover .img-logo_words{
+                    display: none;
+                }
+                &:hover .img-logo_words{
+                    display: none;
+                }
+                &:hover .logo-word{
+                    display: block;
+                }
+                
+                >.img-logo{
+                    margin-top: 15px;
+                    width: 72px;
+                    height: 39px;
+                    transition: 0.2s;
+                    >img{
+                        width: 100%;
+                    }
+                }
+
+                >.img-logo_words{
+                    margin-top: 3px;
+                    width: 72px;
+                    height: 8px;
+                    >img{
+                        width: 100%;
+                    }
+                }
+                >.logo-word{
+                    position: relative;
+                    display: none;
+                    transition: 0.5s;
+                    >span{
+                        top: -5px;
+                        position: absolute;
+                        display: block;
+                        width: 72px;
+                        text-align: center;
+                        color: white;
+                        font-size: x-small;
+                        font-weight: 200;
+                    }
+                }
+            }
+
+            >.nav-block{
+                margin-left: 40px;
+                width: 700px;
+                display: flex;
+                // position: relative;
+                // background-color: sandybrown;
+
+                >.nav{
+                    >ul{
+                        display: flex;
+
+                        >li{
+                            box-sizing: border-box;
+                            display: inline-block;
+
+                            width: 88.63px;
+                            height: 78px;
+                            line-height: 80px;
+                            margin-left: 2px;
+                            padding-left: 4px;
+
+                            &:hover {
+                                background: rgb(82, 233, 238);
+                                animation: changeColor 2s infinite;
+                                animation-delay: 2s;
+                                transition: 2s;
+                            }
+
+                            >a{
+                                text-align: center;
+                                width: 88.63px;
+                                height: 78px;
+                                font-size: 0.875rem;
+                                color: #FFFFFF;
+                                display: block;
+                                font-weight: 900;
+                            }
+                        }
+                        
+                        >.one-explore{
+                            &::after {
+                                content: "";
+                                clear: both;
+                                display: table;
+                            }
+                            &:hover .drop-down-full{
+                                // display: block;
+                                opacity: 1;
+                                // visibility: visible;
+                                z-index: 10;
+                                transition: 1s;
+                            }
+                            // >.one-hove:hover {
+                            // }
+
+                            >.drop-down-full{
+                                position: absolute;
+                                left: 0;
+                                width: 100vw;
+                                height: 300px;
+                                top: 78px;
+                                background-color: var(--color-top);
+                                // background-color: rgb(82, 150, 111);
+                                display: flex;
+                                justify-content: center;
+                                border-bottom-left-radius: 80px;
+                                border-bottom-right-radius:80px;
+                                // display: none;
+                                // visibility: hidden;
+                                opacity: 0;
+                                transition: 1s;
+                                z-index: -1000;
+                                
+                                >ul{
+
+                                    width: 1100px;
+                                    height: 282px;
+                                    // background-color: var(--color-top);
+                                    margin-top: 18px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                // transition: 1s;
+
+    
+                                    >li{
+                                        width: 192px;
+                                        height: 280px;
+                                        position: relative;
+                                        overflow: hidden;
+                                        border-radius: 20px;
+
+                                        >img{
+                                            margin-top: 5px;
+                                            display: block;
+                                            border-radius: 20px;
+                                            width: 192px;
+                                            height: 280px;
+                                            transition: 0.5s;
+
+                                            &:hover{
+                                                scale: 1.1;
+                                            }
+
+                                        }
+                                        >span{
+                                            display: block;
+                                            text-align: center;
+                                            width: 182px;
+                                            position: absolute;
+                                            color: white;
+                                            font-weight: bold;
+                                            top: 75%;
+                                    // transition: 1s;
+
+                                        }
+                                    }
+        
+                                    >.one-explore-word{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        width: 190px;
+
+                                        >h4{
+                                            margin-top: -24px;
+                                            display: block;
+                                            color: #68A4E8;
+                                            font-size: 21px;
+                                        }
+                                        >.desc{
+                                            margin-top: -40px;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            width: 190px;
+                                            height: 320px;
+                                            // background-color: #eee;
+                                            flex-direction: column;
+                                            
+                                            >p{
+                                                // margin: 1px ;
+                                                width: 190px;         
+                                                display: block;
+                                                height: 34px;
+                                                font-weight: 520;
+                                                font-size: 17px;
+                                                color: white;
+                                            }
+                                        }
+                                    
+                                    }
+        
+                                    >.two-explore-word{
+        
+                                        >.one{
+        
+                                            >h4{
+                                                margin-top: -24px;
+                                                display: block;
+                                                color: #68A4E8;
+                                                font-size: 21px;
+                                            }
+                                            >p{
+                                                width: 210px;         
+                                                display: block;
+                                                height: 34px;
+                                                font-weight: 300;
+                                                font-size: 17px;
+                                                color: white;
+                                                margin-top: -40px;
+                                            }
+                                        }
+                                        >.two{
+                                            >h4{
+                                                margin-top: 14px;
+                                                display: block;
+                                                color: #68A4E8;
+                                                font-size: 21px;
+                                            }
+                                            >div{
+                                                margin-top: -35px;
+                                                >p{
+                                                    width: 210px;         
+                                                    height: 34px;
+                                                    font-weight: 300;
+                                                    font-size: 17px;
+                                                    color: white;
+                                                
+                                                }
+                                            }
+                                        }
+                                    }
+                                } 
+
+                                >.right-duck{
+                                    // position: fixed;
+                                    position: absolute;
+                                    right: 0;
+                                    z-index: 0;
+                                    height: 400px;
+                                    width: 450px;
+                                    >img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+
+                        >.two-explore{
+
+                            &:hover .content-container{
+                                // display: block;
+                                opacity: 1;
+                                // visibility: visible;
+                                z-index: 10;
+                            }
+
+                            >.content-container{
+                                width: 100vw;
+                                position: absolute;
+                                left: 0;
+                                background-color: var(--color-top);
+                                border-bottom-left-radius: 80px;
+                                border-bottom-right-radius:80px;
+                                opacity: 0;
+                                transition: 1s;
+                                z-index: -1000;
+                                >ul{
+                                    width: 1000px;
+                                    margin: auto;
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    justify-content: space-around;
+                                    margin-top: 20px;
+
+                                    
+                                    >li{
+                                        // background-color: aquamarine;
+                                        height: 160px;
+                                        // width: 110px;
+                                        // margin: 20px;
+                                        text-align: center;
+                                        display: flex;
+
+                                        &:last-child{
+                                            display: inline-block;
+                                            // display: block;
+                                            width: 200px;
+                                        }
+                                        &:nth-child(6n){
+                                            display: inline-block;
+                                            display: block;
+                                            background-color: #F7f7f7;
+                                        }
+
+                                        >.inside-container{
+                                            height: 160px;
+                                            width: 110px;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            overflow: hidden;
+                                            >img{
+                                                display: block;
+                                                height: 110px;
+                                                width: 110px;
+                                                border-radius: 50%;
+                                                transition: 0.5s;
+                                                &:hover{
+                                                    scale: 1.1;
+                                                }
+                                            }
+                                            >span{
+                                                // position: absolute;
+                                                display: block;
+                                                margin-top: -15px;
+                                                font-weight: bold;
+                                                font-size: 21px;
+                                                width: 110px;
+                                                text-align: center;
+                                                color: white;
+                                            }
+                                            
+                                        }
+
+                                        >h4{
+                                            // width: 200px;
+                                            display: block;
+                                            color: #68A4E8;
+                                            font-size: 21px;
+                                        }
+                                        >p{
+                                            width: 200px;
+                                            display: block;
+                                            height: 14px;
+                                            margin-top: -40px;
+                                            font-weight: 720;
+                                            font-size: 17px;
+                                            color: white;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+
+                        >.three-explore{
+
+                            &:hover .content-container{
+                                // display: block;
+                                opacity: 1;
+                                // visibility: visible;
+                                z-index: 10;
+                            }
+                            >.content-container{
+                                position: absolute;
+                                left: 0;
+                                width: 100vw;
+                                background-color:var(--color-top);
+                                border-bottom-left-radius: 80px;
+                                border-bottom-right-radius:80px;
+                                opacity: 0;
+                                transition: 1s;
+                                z-index: -1000;
+                                >ul{
+                                    width: 1000px;
+                                    margin: 20px auto;
+                                    // background-color: #F7f7f7;
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    // margin-top: 20px;
+                                    >li{
+                                        position: relative;
+                                        width: 350px;
+                                        height: 180px;
+                                        overflow: hidden;
+
+                                        >img{
+                                            width: 350px;
+                                            height: 180px;
+                                            border-radius: 20px;
+                                            transition: 0.5s;
+                                            &:hover{
+                                                scale: 1.5;
+                                            }
+                                        }
+                                        >span{
+                                            position: absolute;
+                                            left: 88px;
+                                            bottom: 1px;
+                                            font-weight: bolder;
+                                            font-size: x-large;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        >.four-explore{
+
+                            &:hover .content-container{
+                                // display: block;
+                                opacity: 1;
+                                // visibility: visible;
+                                z-index: 10;
+                            }
+
+                            >.content-container{
+                                width: 100vw;
+                                background-color: var(--color-top);
+                                position: absolute;
+                                left: 0;
+                                border-bottom-left-radius: 80px;
+                                border-bottom-right-radius:80px;
+                                opacity: 0;
+                                transition: 1s;
+                                z-index: -1000;
+
+                                >ul{
+                                    width: 1000px;
+                                    // background-color: #68A4E8;
+                                    margin: 20px auto;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-evenly;
+                                    >li{
+                                        height: 140px;
+                                        width: 84px;
+
+                                        &:nth-child(5n){
+                                            margin-top: 15px;
+                                            display: inline-block;
+                                            display: block;
+                                            border-radius: 100px;
+                                            background-color: #F7f7f7;
+                                        }
+
+                                        >.inside-container{
+                                            width: 84px;
+                                            height: 84px;
+                                            overflow: hidden;
+                                            border-radius: 50%;
+                                            transition: 1s;
+                                            >img{
+                                                width: 84px;
+                                                height: 84px;
+                                                &:hover{
+                                                    scale: 1.2;
+                                                }
+                                            }
+                                        }
+                                        >span{
+                                            margin-top: -22px;
+                                            display: block;
+                                            font-weight: bold;
+                                            color: white;
+                                        }
+                                        >.font{
+                                            margin-top: -25px;
+                                            >p{
+                                                width: 110px;
+                                                height: 30px;
+                                                display: block;
+                                                font-weight: bold;
+                                                color: white;
+                                                padding:-15px;
+                                                &:first-child{
+                                                    color: #68A4E8;
+                                                }
+                                                
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            >.search{
+                display: flex;
+                width: 200px;
+                height: 78px;
+                position: relative;
+                // background-color: brown;
+                
+                >.dingwei{
+                    position: absolute;
+                    right: 0;
+                    display: flex;
+                    height: 80px;
+                    width: 166px;
+                    >.search-icon{
+                        margin-top: 28px;
+                        margin-right: 45px;
+                        >img{
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                    >.lauange{
+                        display: flex;
+                        margin-top: 28px;
+                        >.lauange-icon{
+                            >img{
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 10px;
+                            }
+                        }
+                        >span{
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+
+
+
+
+        }
+    }
+}

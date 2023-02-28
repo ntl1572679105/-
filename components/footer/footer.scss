@@ -1,0 +1,153 @@
+#footer {
+    background-color: var(--color-top);
+
+    >.background {
+        width: var(--width);
+        background-color: var(--color-top);
+        margin: auto;
+
+        >.container {
+            padding: 40px 20px;
+
+            >div{
+                z-index: 100;
+                position: absolute;
+                left: 50%;
+                // top: -1px;
+                transform: translate(-50%,-50%);
+                >img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            >ul {
+                background-color: var(--color-top);
+                width: 960px;
+
+                >.one-coulunm {
+                    width: 192px;
+                    >h4{
+                        color: white;
+                    }
+                    >.share-box {
+                        margin: 20px auto;
+                        display: flex;
+                        // justify-content: space-evenly;
+                        padding-right: 10px;
+                        >a{
+                            background-color: #3987DE;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            text-align: center;
+                           line-height: 50px;
+                        }
+                    }
+
+                    >.download-box {
+                        margin-top: 20px;
+
+                        >h4 {
+                            margin-bottom: 20px;
+                            color: white;
+                        }
+
+                        >.bg{
+                            background-color: #3987DE;
+                            width: 170px;
+                            border-radius: 15px;
+                            padding-bottom: 15px;
+                            >.download-imgbox {
+                                >img{
+                                    width: 170px;
+                                    height: 170px;
+                                }
+                            }
+    
+                            >ul {
+                                justify-content: space-evenly;
+                                margin-top: 10px;
+                            }
+    
+                            >p {
+                                font-size: 15px;
+                                margin-top: 10px;
+                                display: block;
+                                width: 170px;
+                                text-align: center;
+                                color: #444;
+                            }
+                        }
+                    }
+                }
+
+                >.two-coulunm {
+                    width: 192px;
+                    >h4{
+                        color: white;
+                    }
+                    >.first-div {
+                        margin-top: 20px;
+
+                        >ul {
+                            margin-bottom: 20px;
+
+                            >li {
+                                h4 {
+                                    color: #68A4E8;
+                                    margin-bottom: 10px;
+                                }
+
+                                >p {
+                                    padding: 3px 3px;
+                                    font-size: 17px;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                >.three-coulunm,
+                .four-coulunm,
+                .five-coulunm {
+                    width: 192px;
+                        >div{
+                            >h4{
+                                color: white;
+                            }
+                        }
+                    >ul {
+                        margin: 20px auto;
+
+                        >li {
+                            >p {
+                                font-size: 17px;
+                                color: white;
+                                padding: 6px 3px;
+                                // letter-spacing: 0.7px;
+                            }
+                        }
+                    }
+
+                    >h4 {
+                        color: #68A4E8;
+                    }
+
+                    >p {
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+
+                >.five-coulunm {
+                    >p {
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
