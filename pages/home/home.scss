@@ -101,16 +101,20 @@
                                         >img{
                                             width: 144px;
                                             height: 144px;
+                                            &:hover{
+                                                scale: 1.1;
+                                                transition: 1s;
+                                            }
                                         }
                                     }
                                     >#word{
                                         background: transparent;
-                                        >h4{
+                                        >h3{
                                             width: 144px;
                                             text-align: center;
-                                            color: rgb(12, 12, 12);
+                                            color: white;
                                             display: inline-block;
-                                            font-size: 14px;
+                                            font-size: 16px;
                                             opacity: .5;
                                         }
                                     }
@@ -190,6 +194,7 @@
 
     >.main-content{
         width: 1000px;
+        height: 700px;
         margin: auto;
         overflow: hidden;
 
@@ -231,6 +236,10 @@
                                     width: 100%;
                                     height: 200px;
                                     object-fit:contain;
+                                    &:hover{
+                                        scale: 1.1;
+                                        transition: 2s;
+                                    }
                                 }
                             }
                             >.word{
@@ -251,5 +260,179 @@
                 }
             }
         }
+    }
+
+    >.jiudian{
+        width: 100vw;
+        background-color: white;
+        height: 510px;
+        >.container{
+            width: 1000px;
+            margin: auto;
+
+            >h1{
+                display: block;
+                padding:60px 0 20px 0px;
+            }
+            >.bg{
+                width: 1000px;
+
+                >ul{
+                    display: flex;
+                    justify-content: space-between;
+
+                    >li{
+                        >.img{
+                            position: relative;
+                            width: 480px;
+                            height: 360px;
+                            overflow: hidden;
+                            border-radius: 40px;
+                            >img{
+                                width: 480px;
+                                height: 360px;
+                                &:hover{
+                                    scale: 1.1;
+                                    transition: 2s;
+                                }
+                            }
+                            >.word{
+                                color: white;
+                                position: absolute;
+                                left: 20px;
+                                bottom: 20px;
+                                >h4{
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    >.tuijian{
+        width: 100vw;
+        background-color: white;
+        height: 510px;
+        // border: 1px solid saddlebrown;
+        margin-bottom: 10px;
+        >.container{
+            // border: 1px solid saddlebrown;
+            width: 1000px;
+            margin: auto;
+            >h1{
+                padding-top: 30px;
+            }
+            >.swiper-container{
+
+                >.swiper-four{
+                    width: 1000px;
+                    height: 400px;
+                    overflow: hidden;
+                    margin-top: 30px;
+                    >.swiper-wrapper{
+
+                        >.swiper-slide{
+                            width: 1000px;
+                            height: 400px;
+                            position: relative;
+                            >.img{
+                                width: 1000px;
+                                height: 400px;
+                                
+                                >img{
+                            border-radius: 50px;
+
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            >.word{
+                                width: 480px;
+                                color: white;
+                                position: absolute;
+                                bottom: 50%;
+                                left: 20px;
+                                transform: translateY(50%);
+                                >.desc{
+                                    margin-top: 10px;
+                                    >p{
+                                        color: #eee;
+                                        vertical-align: baseline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    >.gouwu{
+        width: 100vw;
+        background-color: white;
+        margin-top: -10px;
+        margin-bottom: 150px;
+        .container{
+            width: 1000px;
+            margin: auto;
+            >.menu{
+                position: relative;
+                padding-top: 40px;
+                >.two{
+                    // float: right;
+                    position: absolute;
+                    bottom: 10px;
+                    right: 0;
+                    
+                }
+            }
+
+            >.swiper-five{
+                margin-top: 20px;
+                margin-top: 10px;
+                width: 1000px;
+                overflow: hidden;
+                
+                >.swiper-wrapper{
+
+                    >.swiper-slide{
+                            width: 240px;
+                            height: 240px;
+                        >a{
+                            position: relative;
+                            width: 240px;
+                            height: 240px;
+                            >.img{
+                                width: 240px;
+                                height: 240px;
+                                >img{
+                                    display: block;
+                                    border-radius: 30px;
+                                    width: 240px;
+                                    height: 240px;
+                                    overflow: hidden;
+                                    &:hover{
+                                        scale: 1.1;
+                                        transition: 2s;
+                                    }
+                                }
+                            }
+                            >.word{
+                                color: white;
+                                position: absolute;
+                                bottom: 30px;
+                                left: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
