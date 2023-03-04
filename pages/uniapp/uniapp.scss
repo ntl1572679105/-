@@ -1,0 +1,177 @@
+#body{
+
+    .container{
+        // background-color: var(--color-top);
+        width: 100vw;
+        >.head{
+            position: relative;
+            width: 100vw;
+            // margin-bottom: -20px;
+            >.img{
+                width: 100vw;
+                height: 500px;
+                >img{
+                    width: 100%;
+                    object-fit: cover
+                }
+            }
+            >h1{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                font-size: 60px;
+            }
+        }
+
+        >.video{
+            border-top-right-radius: 100px;
+            border-top-left-radius: 100px;
+            border-top: 3px solid rgb(143, 118, 99);
+            background: url(https://www.universalbeijingresort.com/themes/custom/resort/images/web/app/app-bg-1.png);
+
+            width: 100vw;
+            height: 400px;
+
+            >.contain{
+                width: 1000px;
+                height: 400px;
+
+                margin: auto;
+                display: flex;
+                >.word{
+                    width: 500px;
+                    text-align: center;
+                    padding-top: 60px;
+                    >img{
+                        display: block;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        width: 100px;
+                        height: 100px;
+                    }
+                    >div{
+                        p{
+                            padding-top: 10px;
+                            color: #666;
+                            font-size: small;
+                        }
+                        a{
+                            button{
+                                cursor: pointer;
+                                margin-top: 20px;
+                                border-style: none;
+                                width: 300px;
+                                height: 60px;
+                                background-color: var(--color-top);
+                                border-radius: 50px;
+                                color: white;
+                                font-size: 16px;
+                                font-weight: 550;
+                            }
+                        }
+                    }
+
+                }
+                >.display{
+                    width: 500px;
+                    height: 100%;
+                    background-color: #eee;
+                }
+            }
+        }
+
+        >.main-bg{
+            width: 100vw;
+            >ul{
+                >li{
+                    margin-bottom: 10px;
+                    width: 100vw;
+                    height: 500px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        >.down-one{
+            width: 100vw;
+            height: 400px;
+            background: url(../../assert/uniapp/bg3.png);
+
+            >.container{
+                width: 1000px;
+                margin: auto;
+                margin-top: -10px;
+
+                >.word{
+                    width: 1000px;
+                    height: 90px;
+                    text-align: center;
+                    padding-top: 30px;
+                    p{
+                        font-weight: 100;
+                        font-size: small;
+                    }
+                }
+                >.img{
+                    display: flex;
+                    div{
+                        width: 250px;
+                        margin-top: 20px;
+                        padding-left: 10px;
+                        h3{
+                            font-weight: bolder;
+                        }
+                        p{
+                            font-size: xx-small;
+                            font-weight: bold;
+                        }
+                        button{
+                            cursor: pointer;
+                            height: 30px;
+                            border-color: #eee;
+                            border-radius: 20px;
+                        }
+                    }
+                    img{
+                        width: 250px;
+                    }
+                }
+            }
+        }
+
+        >.down-two{
+            width: 1000px;
+            height: 350px;
+            margin: auto;
+            >.word{
+                width: 1000px;
+                text-align: center;
+                p{
+                    color: #444;
+                    margin-top: 20px;
+                }
+            }
+            >.img{
+                width: 100px;
+                height: 100px;
+                display: flex;
+                // margin-left: 80px;
+                margin: 30px 300px;
+
+                img{
+                    margin-left: 80px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }        
+
+        
+
+    }
+}

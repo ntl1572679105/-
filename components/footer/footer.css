@@ -1,48 +1,39 @@
 #footer {
   background-color: var(--color-top);
 }
-
 #footer > .background {
   width: var(--width);
   background-color: var(--color-top);
   margin: auto;
 }
-
 #footer > .background > .container {
   padding: 40px 20px;
 }
-
 #footer > .background > .container > div {
   z-index: 100;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -100%);
 }
-
 #footer > .background > .container > div > img {
   width: 200px;
   height: 200px;
 }
-
 #footer > .background > .container > ul {
   background-color: var(--color-top);
   width: 960px;
 }
-
 #footer > .background > .container > ul > .one-coulunm {
   width: 192px;
 }
-
 #footer > .background > .container > ul > .one-coulunm > h4 {
   color: white;
 }
-
 #footer > .background > .container > ul > .one-coulunm > .share-box {
   margin: 20px auto;
   display: flex;
   padding-right: 10px;
 }
-
 #footer > .background > .container > ul > .one-coulunm > .share-box > a {
   background-color: #3987DE;
   width: 50px;
@@ -51,33 +42,27 @@
   text-align: center;
   line-height: 50px;
 }
-
 #footer > .background > .container > ul > .one-coulunm > .download-box {
   margin-top: 20px;
 }
-
 #footer > .background > .container > ul > .one-coulunm > .download-box > h4 {
   margin-bottom: 20px;
   color: white;
 }
-
 #footer > .background > .container > ul > .one-coulunm > .download-box > .bg {
   background-color: #3987DE;
   width: 170px;
   border-radius: 15px;
   padding-bottom: 15px;
 }
-
 #footer > .background > .container > ul > .one-coulunm > .download-box > .bg > .download-imgbox > img {
   width: 170px;
   height: 170px;
 }
-
 #footer > .background > .container > ul > .one-coulunm > .download-box > .bg > ul {
   justify-content: space-evenly;
   margin-top: 10px;
 }
-
 #footer > .background > .container > ul > .one-coulunm > .download-box > .bg > p {
   font-size: 15px;
   margin-top: 10px;
@@ -86,52 +71,42 @@
   text-align: center;
   color: #444;
 }
-
 #footer > .background > .container > ul > .two-coulunm {
   width: 192px;
 }
-
 #footer > .background > .container > ul > .two-coulunm > h4 {
   color: white;
 }
-
 #footer > .background > .container > ul > .two-coulunm > .first-div {
   margin-top: 20px;
 }
-
 #footer > .background > .container > ul > .two-coulunm > .first-div > ul {
   margin-bottom: 20px;
 }
-
 #footer > .background > .container > ul > .two-coulunm > .first-div > ul > li h4 {
   color: #68A4E8;
   margin-bottom: 10px;
 }
-
 #footer > .background > .container > ul > .two-coulunm > .first-div > ul > li > p {
   padding: 3px 3px;
   font-size: 17px;
   color: white;
 }
-
 #footer > .background > .container > ul > .three-coulunm,
 #footer > .background > .container > ul .four-coulunm,
 #footer > .background > .container > ul .five-coulunm {
   width: 192px;
 }
-
 #footer > .background > .container > ul > .three-coulunm > div > h4,
 #footer > .background > .container > ul .four-coulunm > div > h4,
 #footer > .background > .container > ul .five-coulunm > div > h4 {
   color: white;
 }
-
 #footer > .background > .container > ul > .three-coulunm > ul,
 #footer > .background > .container > ul .four-coulunm > ul,
 #footer > .background > .container > ul .five-coulunm > ul {
   margin: 20px auto;
 }
-
 #footer > .background > .container > ul > .three-coulunm > ul > li > p,
 #footer > .background > .container > ul .four-coulunm > ul > li > p,
 #footer > .background > .container > ul .five-coulunm > ul > li > p {
@@ -139,21 +114,18 @@
   color: white;
   padding: 6px 3px;
 }
-
 #footer > .background > .container > ul > .three-coulunm > h4,
 #footer > .background > .container > ul .four-coulunm > h4,
 #footer > .background > .container > ul .five-coulunm > h4 {
   color: #68A4E8;
 }
-
 #footer > .background > .container > ul > .three-coulunm > p,
 #footer > .background > .container > ul .four-coulunm > p,
 #footer > .background > .container > ul .five-coulunm > p {
   font-weight: bold;
   color: white;
 }
-
 #footer > .background > .container > ul > .five-coulunm > p {
   font-weight: bold;
   color: white;
-}
+}/*# sourceMappingURL=footer.css.map */

@@ -3,32 +3,25 @@
   width: 100vw;
   background-color: var(--color-main);
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container {
   position: relative;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-main > .swiper-one {
-  --swiper-theme-color: #ff6600;
-  /* 设置Swiper风格 */
-  --swiper-navigation-color: green;
-  /* 按钮颜色 */
-  --swiper-navigation-size: 100px;
-  /* 按钮大小 */
+  --swiper-theme-color: #ff6600; /* 设置Swiper风格 */
+  --swiper-navigation-color:green; /* 按钮颜色 */
+  --swiper-navigation-size: 100px; /* 按钮大小 */
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-main > .swiper-one > .swiper-wrapper > .swiper-slide {
   position: relative;
   width: 100vw;
   height: 100vh;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-main > .swiper-one > .swiper-wrapper > .swiper-slide > .banner-box > img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100vw;
   height: 100vh;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-main > .swiper-one > .swiper-wrapper > .swiper-slide > .banner-word {
   position: absolute;
   transform: none;
@@ -38,7 +31,6 @@
   left: 30%;
   transform: translate(-50%, -50%);
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-main > .swiper-one > .swiper-wrapper > .swiper-slide > .banner-word > p {
   display: block;
   width: 650px;
@@ -48,7 +40,6 @@
   font-size: 55px;
   font-weight: bolder;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-main > .swiper-one > .swiper-wrapper > .swiper-slide > .banner-word > a {
   display: inline-block;
   text-decoration: none;
@@ -62,49 +53,41 @@
   font-size: 23px;
   border-radius: 3.125rem;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-bottom {
   position: absolute;
   bottom: -60px;
   width: 100vw;
   height: 200px;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-bottom > .swiper-two {
   width: 1000px;
   margin: auto;
   height: 180px;
   overflow: hidden;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-bottom > .swiper-two > .swiper-wrapper > .swiper-slide > #img {
   width: 144px;
   height: 144px;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-bottom > .swiper-two > .swiper-wrapper > .swiper-slide > #img > img {
   width: 144px;
   height: 144px;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-bottom > .swiper-two > .swiper-wrapper > .swiper-slide > #img > img:hover {
   scale: 1.1;
   transition: 1s;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-bottom > .swiper-two > .swiper-wrapper > .swiper-slide > #word {
   background: transparent;
 }
-
 #body > .bottom-bg > .g-img1 > .container > .swiper-container > .swiper-bottom > .swiper-two > .swiper-wrapper > .swiper-slide > #word > h3 {
   width: 144px;
   text-align: center;
   color: white;
   display: inline-block;
   font-size: 16px;
-  opacity: .5;
+  opacity: 0.5;
 }
-
 #body > .bottom-bg .g-img2 {
   background-color: var(--color-main);
   background-attachment: fixed;
@@ -118,7 +101,6 @@
   font-size: 7vh;
   font-weight: bold;
 }
-
 #body > .bottom-bg .g-img3 {
   background-image: url(../../assert/悬浮图/bg.jpg);
   background-attachment: fixed;
@@ -129,53 +111,44 @@
   width: 100vw;
   color: #fff;
 }
-
 #body > .bottom-bg .g-img3 > .bg {
   width: 1000px;
   margin: auto;
 }
-
 #body > .bottom-bg .g-img3 > .bg > div {
   width: 550px;
   height: 180px;
   margin-top: 80px;
 }
-
 #body > .bottom-bg .g-img3 > .bg > div > span {
   display: block;
   font-weight: bold;
 }
-
 #body > .bottom-bg .g-img3 > .bg > div > h1 {
   cursor: pointer;
   display: block;
   margin: 10px 0 5px 0;
 }
-
 #body > .bottom-bg .g-img3 > .bg > div > p {
   display: block;
   font-weight: 540;
   margin: 5px 0;
 }
-
 #body > .bottom-bg .g-img3 > .bg > div > a {
   display: block;
   cursor: pointer;
   color: white;
   font-weight: 600;
 }
-
 #body > .main-content {
   width: 1000px;
   height: 700px;
   margin: auto;
   overflow: hidden;
 }
-
 #body > .main-content > .container {
   color: white;
 }
-
 #body > .main-content > .container > .menu {
   width: 1000px;
   height: 70px;
@@ -183,19 +156,16 @@
   display: flex;
   justify-content: space-between;
 }
-
 #body > .main-content > .container > .swiper-three {
   width: 1000px;
   height: 240px;
 }
-
 #body > .main-content > .container > .swiper-three > .swiper-wrapper > .swiper-slide {
   width: 280px;
   height: 250px;
   margin-right: 15px;
   border-radius: 30px;
 }
-
 #body > .main-content > .container > .swiper-three > .swiper-wrapper > .swiper-slide > a > .img {
   width: 285px;
   height: 170px;
@@ -203,19 +173,17 @@
   border-top-right-radius: 30px;
   overflow: hidden;
 }
-
 #body > .main-content > .container > .swiper-three > .swiper-wrapper > .swiper-slide > a > .img img {
   margin-top: -20px;
   width: 100%;
   height: 200px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-
 #body > .main-content > .container > .swiper-three > .swiper-wrapper > .swiper-slide > a > .img img:hover {
   scale: 1.1;
   transition: 2s;
 }
-
 #body > .main-content > .container > .swiper-three > .swiper-wrapper > .swiper-slide > a > .word {
   line-height: 40px;
   height: 80px;
@@ -225,37 +193,30 @@
   background-color: white;
   margin-top: -10px;
 }
-
 #body > .main-content > .container > .swiper-three > .swiper-wrapper > .swiper-slide > a > .word > p {
-  font-family: "AvenirNextLTPro-Regular","MXiangHeHeiSCStd-Book";
+  font-family: "AvenirNextLTPro-Regular", "MXiangHeHeiSCStd-Book";
   font-size: x-small;
 }
-
 #body > .jiudian {
   width: 100vw;
   background-color: white;
   height: 510px;
 }
-
 #body > .jiudian > .container {
   width: 1000px;
   margin: auto;
 }
-
 #body > .jiudian > .container > h1 {
   display: block;
   padding: 60px 0 20px 0px;
 }
-
 #body > .jiudian > .container > .bg {
   width: 1000px;
 }
-
 #body > .jiudian > .container > .bg > ul {
   display: flex;
   justify-content: space-between;
 }
-
 #body > .jiudian > .container > .bg > ul > li > .img {
   position: relative;
   width: 480px;
@@ -263,68 +224,56 @@
   overflow: hidden;
   border-radius: 40px;
 }
-
 #body > .jiudian > .container > .bg > ul > li > .img > img {
   width: 480px;
   height: 360px;
 }
-
 #body > .jiudian > .container > .bg > ul > li > .img > img:hover {
   scale: 1.1;
   transition: 2s;
 }
-
 #body > .jiudian > .container > .bg > ul > li > .img > .word {
   color: white;
   position: absolute;
   left: 20px;
   bottom: 20px;
 }
-
 #body > .jiudian > .container > .bg > ul > li > .img > .word > h4 {
   margin-top: 10px;
 }
-
 #body > .tuijian {
   width: 100vw;
   background-color: white;
   height: 510px;
   margin-bottom: 10px;
 }
-
 #body > .tuijian > .container {
   width: 1000px;
   margin: auto;
 }
-
 #body > .tuijian > .container > h1 {
   padding-top: 30px;
 }
-
 #body > .tuijian > .container > .swiper-container > .swiper-four {
   width: 1000px;
   height: 400px;
   overflow: hidden;
   margin-top: 30px;
 }
-
 #body > .tuijian > .container > .swiper-container > .swiper-four > .swiper-wrapper > .swiper-slide {
   width: 1000px;
   height: 400px;
   position: relative;
 }
-
 #body > .tuijian > .container > .swiper-container > .swiper-four > .swiper-wrapper > .swiper-slide > .img {
   width: 1000px;
   height: 400px;
 }
-
 #body > .tuijian > .container > .swiper-container > .swiper-four > .swiper-wrapper > .swiper-slide > .img > img {
   border-radius: 50px;
   width: 100%;
   height: 100%;
 }
-
 #body > .tuijian > .container > .swiper-container > .swiper-four > .swiper-wrapper > .swiper-slide > .word {
   width: 480px;
   color: white;
@@ -333,62 +282,51 @@
   left: 20px;
   transform: translateY(50%);
 }
-
 #body > .tuijian > .container > .swiper-container > .swiper-four > .swiper-wrapper > .swiper-slide > .word > .desc {
   margin-top: 10px;
 }
-
 #body > .tuijian > .container > .swiper-container > .swiper-four > .swiper-wrapper > .swiper-slide > .word > .desc > p {
   color: #eee;
   vertical-align: baseline;
 }
-
 #body > .gouwu {
   width: 100vw;
   background-color: white;
   margin-top: -10px;
   margin-bottom: 150px;
 }
-
 #body > .gouwu .container {
   width: 1000px;
   margin: auto;
 }
-
 #body > .gouwu .container > .menu {
   position: relative;
   padding-top: 40px;
 }
-
 #body > .gouwu .container > .menu > .two {
   position: absolute;
   bottom: 10px;
   right: 0;
 }
-
 #body > .gouwu .container > .swiper-five {
   margin-top: 20px;
   margin-top: 10px;
   width: 1000px;
   overflow: hidden;
 }
-
 #body > .gouwu .container > .swiper-five > .swiper-wrapper > .swiper-slide {
   width: 240px;
   height: 240px;
 }
-
 #body > .gouwu .container > .swiper-five > .swiper-wrapper > .swiper-slide > a {
   position: relative;
   width: 240px;
   height: 240px;
 }
-
 #body > .gouwu .container > .swiper-five > .swiper-wrapper > .swiper-slide > a > .img {
   width: 240px;
   height: 240px;
 }
-
 #body > .gouwu .container > .swiper-five > .swiper-wrapper > .swiper-slide > a > .img > img {
   display: block;
   border-radius: 30px;
@@ -396,15 +334,13 @@
   height: 240px;
   overflow: hidden;
 }
-
 #body > .gouwu .container > .swiper-five > .swiper-wrapper > .swiper-slide > a > .img > img:hover {
   scale: 1.1;
   transition: 2s;
 }
-
 #body > .gouwu .container > .swiper-five > .swiper-wrapper > .swiper-slide > a > .word {
   color: white;
   position: absolute;
   bottom: 30px;
   left: 15px;
-}
+}/*# sourceMappingURL=home.css.map */
