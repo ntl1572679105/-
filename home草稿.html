@@ -1,221 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./home.css">
+    <meta charset="utf-8">
+    <title>历史上的今天</title>
+    <script src="./jquery-2.1.4.min.js"></script>
 </head>
-
 <style>
     * {
-        margin: 0;
         padding: 0;
+        margin: 0;
     }
 
-    .g-img2 {
-            background-image: url(./img/swiper/testbg.jpg);
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center center;
-            
-            height: 100vh;
-            /* background: rgba(0, 0, 0, .7); */
-            color: #fff;
-            line-height: 100vh;
-            text-align: center;
-            font-size: 20vh;
-        }
+    .container {
+        width: 1200px;
+        min-height: 800px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        background: #fff;
+        border: 1px solid #BAB9C0;
+        padding: 0 40px;
+    }
 
-        /* .section {
-            height: 100vh;
-            background: rgba(0, 0, 0, .7);
-            color: #fff;
-            line-height: 100vh;
-            text-align: center;
-            font-size: 20vh;
-        } */
+    .top_box {
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #999997;
+        box-sizing: border-box;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top_box div {
+        margin: 0 15px;
+    }
+
+    .top_box span {
+        font-size: 14px;
+        color: #5555E3;
+        cursor: pointer;
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .title span {
+        font-weight: 400;
+        font-size: 14px;
+        color: #C0B9B6;
+    }
+
+    .today {
+        color: #BAB9C0 !important;
+        cursor: text !important;
+    }
+
+    .title:hover {
+        color: #5555E3;
+    }
+
+    .item {
+        margin-bottom: 10px;
+    }
+
+    .item div {
+        font-size: 14px;
+        text-indent: 2em;
+        margin-top: 4px;
+    }
+
+    .disnone {
+        display: none;
+    }
+
+    .main_hover {
+        color: #5555E3;
+    }
 </style>
 
 <body>
-
-    <div class="g-img1 section1">
-
-        <div class="container">
-    
-            <div class="swiper-container">
-    
-                <div class="swiper-main">
-    
-                    <div class="swiper-one">
-                        <div class="swiper-wrapper">
-                            
-                            <div class="swiper-slide">
-                                <div class="banner-word">
-                                    <p>两日畅游 欢趣翻倍</p>
-                                    <a href="">了解更多</a>
-                                </div>
-                                <div class="banner-box">  
-                                    <img src="./img/1-1.jpg" alt="">
-                                </div>
-                            </div>
-    
-                            <div class="swiper-slide">
-                                <div class="banner-word">
-                                    <p>年卡在手 畅行无忧</p>
-                                    <a href="">了解更多</a>
-                                </div>
-                                <div class="banner-box">  
-                                    <img src="./img/1-2.jpg" alt="">
-                                </div>
-                            </div>
-    
-                            <div class="swiper-slide">
-                                <div class="banner-word">
-                                    <p>缤纷礼券 一件送达</p>
-                                    <a href="">了解更多</a>
-                                </div>
-                                <div class="banner-box">  
-                                    <img src="./img/1-3.jpg" alt="">
-                                </div>
-                            </div>
-    
-                            <div class="swiper-slide">
-                                <div class="banner-word">
-                                    <p>两日畅游 欢趣翻倍</p>
-                                    <a href="">了解更多</a>
-                                </div>
-                                <div class="banner-box">  
-                                    <img src="./img/1-4.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- 如果需要导航按钮 -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-    
-                </div>
-                
-                <div class="swiper-bottom">
-                    <div style="background-color: sandybrown;width: 1000px;height: 100px;"></div>
-    
-                    <div class="swiper-two">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div id="img">
-                                    <img src="./img/swiper/2-1.1.png" alt="">
-                                </div>
-                                <div id="word"><h4>功夫熊猫盖世之地</h4></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div id="img">
-                                    <img src="./img/swiper/2-2.2.png" alt="">
-                                </div>
-                                <div id="word"><h4>小黄人乐园</h4></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div id="img">
-                                    <img src="./img/swiper/2-3.3.png" alt="">
-                                </div>
-                                <div id="word"><h4>哈利波特的魔法世界</h4></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div id="img">
-                                    <img src="./img/swiper/2-4-4.png" alt="">
-                                </div>
-                                <div id="word"><h4>未来水世界</h4></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div id="img">
-                                    <img src="./img/swiper/2-5.5.png" alt="">
-                                </div>
-                                <div id="word"><h4>侏罗纪世界努布拉岛</h4></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div id="img">
-                                    <img src="./img/swiper/2-6.6.png" alt="">
-                                </div>
-                                <div id="word"><h4>变形金刚基地</h4></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div id="img">
-                                    <img src="./img/swiper/2-7.7.png" alt="">
-                                </div>
-                                <div id="word"><h4>好莱坞</h4></div>
-                            </div>
-                        </div>
-                        <!-- 如果需要分页器 -->
-                        <div class="swiper-pagination"></div>
-                        
-                    </div>
-    
-                </div>
-            </div>
-    
+    <div class="container">
+        <div class="top_box">
+            <span class="before">
+                < 前一天</span>
+                    <div>历史上的今天<span class="today"></div>
+            </span><span class="later">后一天 ></span>
+        </div>
+        <div class="items">
         </div>
     </div>
-
-    <div class="g-img2 section2">IMG2</div>
-    
-
-
-    <div class="main-content">
-        <div style="background-color: salmon;width: 1000px;height: 400px;"></div>
-    </div>
-
-
-
-
-
-
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-
-    <script>
-        var mySwiperone = new Swiper('.swiper-one', {
-            loop: true, // 循环模式选项
-            parallax : true,
-
-            // 如果需要前进后退按钮
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            // autoplay: {
-            //     // delay: 2000,//1秒切换一次
-            // },
-            // effect: 'cards',
-            // cardsEffect: {
-            // slideShadows: true,
-            // //transformEl:'.text',
-            // },
-        }) 
-        
-
-        var mySwipertwo = new Swiper('.swiper-two', {
-            loop: true, // 循环模式选项
-            parallax : true,
-
-            slidesPerView: 6,
-            grid: {
-                fill: 'column',
-                rows: 1,
-            },
-                
-
-
-            autoplay: {
-                // delay: 2000,//1秒切换一次
-            },
-
-        })        
-    </script>
-
-
 </body>
+<script>
+    $(function () {
+        let milliscond = ''; //毫秒数
+        let argumentsTime = '';//请求参数
+        let todayTime = setTime().slice(5,)
+        $('.today').html('(' + todayTime + ')')
+
+        //点击前一天
+        $('.before').click(function () {
+            let oneDay = 1000 * 60 * 60 * 24;//一天的毫秒数
+            let before = milliscond - oneDay
+            let date = new Date();
+            date.setTime(before)
+            setTodaytime(date)
+            todayTime = todayTime.slice(5,)
+            $('.today').html('(' + todayTime + ')')
+            getHistorylist(argumentsTime)
+        })
+
+        //点击后一天
+        $('.later').click(function () {
+            let oneDay = 1000 * 60 * 60 * 24;//一天的毫秒数
+            let before = milliscond + oneDay
+            let date = new Date();
+            date.setTime(before)
+            setTodaytime(date)
+            todayTime = todayTime.slice(5,)
+            $('.today').html('(' + todayTime + ')')
+            getHistorylist(argumentsTime)
+        })
+
+        //点击显示当前元素内容
+        // $(".item").each(function(index, element) {
+        // 	console.log(index);
+        //     $(this).click(function(){
+        // 		console.log(1111);
+        // 	   // $(this).addClass("fnhover").siblings("a").removeClass("fnhover");
+        // 	   // $(".changeMore").attr("href",$(this).attr('href'));
+        // 	   // $('#fa').siblings("div").hide().eq(index).show();
+        //  	});	
+        // });
+        //点击标题元素（‘历史上的今天’）
+        $(document).on('click', '.item', function () {
+            let data = $(this).siblings();//获取除自身外，遍历同级的所有元素，修改适用于同级所有元素
+            for (let i = 0; i < data.length; i++) {
+                //隐藏除点击元素外其他元素
+                $(data[i]).children().eq(-1).addClass("disnone")
+            }
+            //main_hover  这个就是文字样式而已
+            if ($(this).children().eq(-1).hasClass("disnone")) {//判断当前点击元素是否被隐藏，如果被隐藏则显示
+                $(this).addClass("main_hover").siblings().removeClass("main_hover");
+                $(this).children().eq(-1).removeClass("disnone");//点击的元素移除 disnone 这个class 然后进行显示
+            } else {
+                $(this).removeClass("main_hover").siblings().removeClass("main_hover");
+                $(this).children().eq(-1).addClass("disnone");//点击的元素添加 disnone 这个class 然后进行隐藏
+            }
+
+        })
+
+
+
+
+
+        //获取当日数据
+        getHistorylist(argumentsTime)
+
+
+        //获取数据函数
+        function getHistorylist(argumentsTime) {
+            $.ajax({
+                type: "GET",
+                url: "http://sahdfghjksfhjdksfhjd.seeyon1.server.wangserver.cn/history/getHistory?date=" + argumentsTime,
+                qcontentType: 'application/json',
+                dataType: "json",
+                success: res => {
+                    let data = res.data
+                    data = [{}, {}, {}, {}, {}]
+                    let listHtml = '';
+                    $.each(data, function (i, item) {
+                        // listHtml+= `<div class="item">
+                        // 			<p class="title">${item.title}<span> (${item.createTime})</span></p>
+                        // 			<div>${item.txt}</div>
+                        // 			</div>`
+                        listHtml += `<div class="item">
+										<p class="title">历史上的今天<span> (2022-08-22)</span></p>
+										<div class="disnone">新闻 [1]  ，也叫消息、资讯，是通过报纸、电台、广播、电视台等媒体途径所传播信息的 [2]  一种称谓。是记录社会、传播信息、反映时代的一种文体。新闻概念有广义与狭义之分，就其广义而言，除了发表于报刊、广播、互联网、电视上的评论与专文外的常用文本都属于新闻之列，包括消息、通讯、特写、速写（有的将速写纳入特写之列）等等 </div>
+										</div>`
+                    })
+                    $('.items').html(listHtml)
+                }
+            });
+        }
+
+
+        //初始化时间
+        function setTime() {
+            var now = new Date();
+            var year = now.getFullYear(); //得到年份
+            var month = now.getMonth(); //得到月份
+            var date = now.getDate(); //得到日期
+            milliscond = now.getTime()//毫秒数
+            month = month + 1;
+            month = month.toString().padStart(2, "0");
+            date = date.toString().padStart(2, "0");
+            argumentsTime = `${year}-${month}-${date}`
+            var defaultDate = `${year}年${month}月${date}日`;
+            return defaultDate;
+        }
+
+        //改变时间函数
+        function setTodaytime(d) {
+            milliscond = d.getTime()//毫秒数
+            var year = d.getFullYear(); //得到年份
+            var month = d.getMonth(); //得到月份
+            var date = d.getDate(); //得到日期
+            month = month + 1;
+            month = month.toString().padStart(2, "0");
+            date = date.toString().padStart(2, "0");
+            todayTime = `${year}年${month}月${date}日`
+            argumentsTime = `${year}-${month}-${date}`
+        }
+    })
+</script>
 
 </html>

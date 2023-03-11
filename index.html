@@ -30,7 +30,13 @@
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+            securityJsCode:'4be8d13837f0b5cbb6973be727411e1e',
+        }
+    </script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=600a284c1a99e25987240899e6071b63"></script> 
+    
     <script>
         // 在 html 加载完毕后, 再加载关联的 JS 
         $('#header').load('./components/header/header.html', function () {

@@ -1,0 +1,144 @@
+#body > .container {
+  position: relative;
+  height: 2120px;
+}
+#body > .container > .head {
+  position: absolute;
+  width: 100vw;
+  height: 300px;
+}
+#body > .container > .head > .img {
+  width: 100vw;
+  height: 300px;
+}
+#body > .container > .head > .img img {
+  width: 100%;
+  height: 100%;
+}
+#body > .container > .head span {
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 33%;
+  font-size: xxx-large;
+  font-weight: 1000;
+  transform: translate(-50%, -50%);
+}
+#body > .container .cards {
+  position: absolute;
+  top: 200px;
+  background-color: white;
+  width: 100vw;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+}
+#body > .container .cards > ul {
+  width: 1000px;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+#body > .container .cards > ul > li {
+  width: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#body > .container .cards > ul > li > .img {
+  width: 300px;
+}
+#body > .container .cards > ul > li > .img img {
+  width: 100%;
+}
+#body > .container .cards > ul > li h3 {
+  width: 300px;
+  text-align: center;
+  margin: 20px 0 15px 0;
+}
+#body > .container .cards > ul > li span {
+  display: block;
+  width: 300px;
+  text-align: center;
+  color: var(--color-top);
+  font-weight: bold;
+  font-size: small;
+}
+#body > .container .cards > ul > li > .p3 {
+  margin-top: 10px;
+  width: 300px;
+}
+#body > .container .cards > ul > li > .p3 p {
+  padding-left: 20px;
+  font-size: small;
+  font-weight: 600;
+}
+#body > .container .cards > ul > li > .word {
+  width: 300px;
+  margin-top: 20px;
+}
+#body > .container .cards > ul > li > .word > .price {
+  display: flex;
+}
+#body > .container .cards > ul > li > .word > .price p {
+  margin-left: 40px;
+  display: block;
+  width: 80px;
+  height: 30px;
+  font-size: x-large;
+  font-weight: bold;
+}
+#body > .container .cards > ul > li > .word > .price h6 {
+  height: 30px;
+  padding-bottom: -10px;
+  line-height: 40px;
+}
+#body > .container .cards > ul > li > .word > .price span {
+  height: 30px;
+  width: 80px;
+  line-height: 40px;
+  color: var(--color-top);
+  display: block;
+}
+#body > .container .cards > ul > li > .word > .icon {
+  width: 300px;
+  height: 40px;
+  background-color: bisque;
+}
+#body > .container .cards > ul > li > .word button {
+  cursor: pointer;
+  color: var(--color-top);
+  border: none;
+  background-color: #eee;
+  margin-top: 10px;
+  height: 30px;
+  width: 250px;
+  margin-left: 25px;
+  border-radius: 30px;
+  transition: 1s;
+}
+#body > .container .cards > ul > li > .word button:hover {
+  background-color: var(--color-top);
+  color: white;
+}
+#body > .container .cards > ul > li > .word div {
+  width: 210px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#body > .container .cards > ul > li > .word div a {
+  cursor: pointer;
+  margin: 20px;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+  color: #bbb;
+  font-size: 1px;
+}
+#body > .container .cards .botton-word {
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+#body > .container .cards .botton-word span a {
+  color: var(--color-top);
+}/*# sourceMappingURL=ticket.css.map */
