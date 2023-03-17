@@ -74,10 +74,8 @@
 }
 #header > .background > .container > .nav-block > .nav > ul > li:hover {
   background: rgb(82, 233, 238);
-  -webkit-animation: changeColor 2s infinite;
-          animation: changeColor 2s infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation: changeColor 2s infinite;
+  animation-delay: 2s;
   transition: 2s;
 }
 #header > .background > .container > .nav-block > .nav > ul > li > a {
